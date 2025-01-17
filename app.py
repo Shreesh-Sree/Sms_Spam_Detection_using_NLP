@@ -32,10 +32,10 @@ def preprocess_text(text):
 st.set_page_config(page_title="SMS Spam Detection", layout="wide")
 
 # Sidebar for Information
-st.sidebar.title("Spam Email Classifier")
+st.sidebar.title("Spam SMS Classifier")
 st.sidebar.markdown("""
-    **Welcome to the Email Spam Detection App!**  
-    This app classifies Email messages as **Spam** or **Ham (Not Spam)** using machine learning.
+    **Welcome to the SMS Spam Detection App!**  
+    This app classifies SMS messages as **Spam** or **Ham (Not Spam)** using machine learning.
 
     ### How it Works:
     1. **Input your SMS message** in the provided text area.
@@ -47,13 +47,13 @@ st.sidebar.markdown("""
 
    
 
-    Developer: Preeti Parihar                              
+    Developer: Sreesanth R                             
 """)
 
 # Main content area
 st.title("Spam Detection")
 st.markdown("""
-    This app uses machine learning to classify SMS and Email messages as either **Spam** or **Ham** (Not Spam).  
+    This app uses machine learning to classify SMS and messages as either **Spam** or **Ham** (Not Spam).  
     The machine learning model was trained on a dataset of SMS messages and classifies messages based on their content.
 """)
 
