@@ -5,6 +5,9 @@ import nltk
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import TfidfVectorizer
 
+# Set page configuration (must be the first Streamlit command)
+st.set_page_config(page_title="SMS Spam Detection", layout="wide")
+
 # Download NLTK stopwords (cached for better performance)
 @st.cache_resource
 def download_stopwords():
@@ -31,9 +34,6 @@ def preprocess_text(text):
     
     # Join words back to string
     return " ".join(words)
-
-# Streamlit App Configuration
-st.set_page_config(page_title="SMS Spam Detection", layout="wide")
 
 # Sidebar for Information
 st.sidebar.title("Spam SMS Classifier")
